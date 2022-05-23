@@ -1,0 +1,39 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperSlide {
+  text-align: center;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiperSlideImg {
+  display: block;
+  width: 150px;
+  height: 200;
+  object-fit: cover;
+  border: 2px solid #fff;
+  pointer: cursor;
+}
+
+.image {
+  @apply w-full h-64 bg-gray-300 rounded-lg shadow-md;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}

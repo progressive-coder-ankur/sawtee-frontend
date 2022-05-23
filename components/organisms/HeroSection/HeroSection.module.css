@@ -1,0 +1,40 @@
+.heroImage {
+  @apply flex items-center justify-center opacity-80 p-6;
+  background-image: url('/images/hero-image.jfif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 44rem;
+  width: 100%;
+  border-radius: 0;
+
+  &:hover {
+    @apply opacity-40;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperSlide {
+  text-align: center;
+}
+
+.swiperSlideImg {
+  display: block;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #f1f1f1;
+  pointer: cursor;
+}
+
+.image {
+  @apply w-full h-64 bg-gray-300 rounded-lg shadow-md;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}

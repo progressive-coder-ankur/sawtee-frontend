@@ -1,0 +1,27 @@
+.bgImage {
+  @apply flex items-center justify-center bg-gray-900 bg-opacity-50 p-6;
+  background-image: url('/images/undraw_connected_world_wuay.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 18rem;
+  width: 100%;
+}
+
+.megamenu {
+  @apply relative;
+  background-color: #006181;
+  /* opacity: 0.9; */
+}
+
+.navigation {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.search {
+  @apply justify-center;
+
+  @screen lg {
+    @apply justify-end;
+  }
+}

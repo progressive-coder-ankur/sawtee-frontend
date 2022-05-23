@@ -1,0 +1,11 @@
+.imgWrapper {
+  @apply block relative;
+  width: 90px;
+}
+
+.featuredEventsImg {
+  @apply object-contain rounded-md;
+  display: block;
+  width: 90px;
+  height: 60px;
+}

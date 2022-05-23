@@ -1,0 +1,103 @@
+.container {
+  @apply bg-opacity-30;
+  padding: 2rem 5rem;
+  -webkit-transition: background-color 700ms linear;
+  -moz-transition: background-color 700ms linear;
+  -o-transition: background-color 700ms linear;
+  -ms-transition: background-color 700ms linear;
+  transition: background-color 700ms linear;
+  -webkit-backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem);
+}
+
+.wrapper {
+  overflow: hidden;
+  @apply rounded-xl shadow-2xl drop-shadow-lg;
+}
+.inner,
+.sliderItem {
+  /* @apply height-slider; */
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 700ms ease-in;
+  height: 500px;
+  animation: fadeIn 500ms;
+}
+
+.sliderItem {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  & .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+  }
+
+  & .image:hover {
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+  }
+}
+.content {
+  @apply absolute bottom-16 flex flex-col gap-4 rounded-xl p-6 px-12 justify-center items-center;
+  background: hsl(0 0% 100% / 0.3);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+.title {
+  @apply md:text-5xl text-xl text-gray-800 block font-bold md:hidden;
+}
+
+.subtitle {
+  @apply md:text-3xl text-gray-800 md:font-bold;
+}
+
+.indicators {
+}
+
+.indicators > button {
+  margin: 1rem;
+}
+
+.navigation {
+  @apply absolute bottom-10 right-20 hidden p-8 justify-center items-center rounded-xl lg:flex;
+  background: hsl(0 0% 0% / 0.6);
+  -webkit-backdrop-filter: blur(0.25rem);
+  backdrop-filter: blur(0.25rem);
+}
+
+.list .active {
+  @apply flex justify-center items-center p-6 py-2 mb-2 rounded-md text-gray-400;
+  background: hsl(0 0% 0% / 0.8);
+}
+
+.listItem {
+  @apply flex justify-center items-center p-6 py-2  mb-2 rounded-md text-gray-400;
+  background: hsl(0 0% 0% / 0.5);
+}
+
+.listItem:hover {
+  background: hsl(0 0% 0% / 0.8);
+}
+
+.pagination .active {
+  background: hsl(0 0% 0%);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

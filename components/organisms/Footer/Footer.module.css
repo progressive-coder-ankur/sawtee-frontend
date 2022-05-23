@@ -1,0 +1,96 @@
+.footer {
+  @apply border-t bg-primary;
+}
+
+.Container {
+  @apply relative bg-gray-200 text-gray-700 px-8 py-12 lg:py-16;
+}
+
+.Content {
+  @apply max-w-screen-xl mx-auto relative z-10;
+}
+
+.SixColumns {
+  @apply flex flex-wrap text-center sm:text-left justify-center sm:justify-start md:justify-between -mt-12;
+}
+
+.Column {
+  @apply px-4 sm:px-0 sm:w-1/4 md:w-auto mt-12;
+}
+
+.ColumnHeading {
+  @apply uppercase font-bold;
+}
+
+.LinkList {
+  @apply mt-6 text-sm font-medium;
+}
+
+.LinkListItem {
+  @apply mt-3 flex gap-2 items-center;
+}
+
+.Link {
+  @apply border-b-2 border-transparent focus:border-gray-700 pb-1 transition duration-300;
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#000, #000);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+  &:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%;
+  }
+}
+
+.SubscribeNewsletterColumn {
+  @apply text-center lg:text-left w-full lg:w-auto mt-20 lg:mt-12;
+}
+
+.SubscribeNewsletterContainer {
+  @apply max-w-sm mx-auto lg:mx-0;
+}
+.SubscribeText {
+  @apply mt-2 lg:mt-6 text-sm font-medium text-gray-600;
+}
+.SubscribeForm {
+  @apply mt-4 lg:mt-6 text-sm sm:flex max-w-xs sm:max-w-none mx-auto sm:mx-0;
+}
+.Input {
+  @apply sm:pr-48 pl-8 py-4 sm:py-5 rounded-full border-2 w-full font-medium focus:outline-none transition duration-300  focus:border-indigo-500 hover:border-gray-500;
+}
+.SubscribeButton {
+  @apply w-full sm:absolute right-0 top-0 bottom-0 bg-indigo-500 text-gray-100 font-bold mr-2 my-4 sm:my-2 rounded-full py-4 flex items-center justify-center sm:w-40 sm:leading-none focus:outline-none hover:bg-indigo-900 transition duration-300;
+}
+
+.Divider {
+  @apply my-16 border-b-2 border-gray-300 w-full;
+}
+
+.ThreeColRow {
+  @apply flex flex-col md:flex-row items-center justify-between;
+}
+
+.LogoContainer {
+  @apply flex items-center justify-center md:justify-start;
+}
+
+.LogoText {
+  @apply ml-2 text-xl font-black tracking-wider text-gray-800 cursor-pointer;
+}
+
+.CopywrightNotice {
+  @apply text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500;
+}
+
+.SocialLinksContainer {
+  @apply mt-8 md:mt-0 flex;
+}
+.SocialLink {
+  @apply cursor-pointer p-2 rounded-full bg-gray-900 text-gray-100 hover:bg-gray-700 transition duration-300 mr-4;
+  & svg {
+    @apply w-4 h-4;
+  }
+}
